@@ -1,3 +1,12 @@
+/*
+* File: Solution.java
+* Author: Zsitnyák Ádám,
+* Copyright: 2025, Zstinyák Ádám
+* Group: Szoft N
+* Date: 2025-03-11
+* Github: https://github.com/nagymagyar
+*/
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;

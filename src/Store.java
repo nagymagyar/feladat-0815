@@ -1,3 +1,12 @@
+/*
+* File: Store.java
+* Author: Zsitnyák Ádám,
+* Copyright: 2025, Zstinyák Ádám
+* Group: Szoft N
+* Date: 2025-03-11
+* Github: https://github.com/nagymagyar
+*/
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.time.LocalDate;
@@ -17,7 +26,7 @@ public class Store {
         }
     }
     private ArrayList<Laktat> tryreadFile()  throws FileNotFoundException{
-        ArrayList<Laktat> Laktat = new ArrayList<> ();
+        ArrayList<Laktat> Lakasok = new ArrayList<> ();
         File file = new File("laktat.txt");
         try(Scanner sc = new Scanner(file, "utf8")){
             sc.nextLine();
@@ -30,13 +39,13 @@ public class Store {
                 laktat.setVaros(arr[2]);
                 laktat.setHazszam((arr[3]));
                 laktat.setVege(LocalDate.parse(arr[4]));
-                laktat.add(lakas);
+                laktat.add(laktat);
 
                 System.out.println(laktat.getSzulido());
                 
             }
         }
-        return laktat;
+        return Lakasok;
     } 
 }
 
